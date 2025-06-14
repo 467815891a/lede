@@ -133,13 +133,6 @@
 	leds {
 		compatible = "gpio-leds";
 
-		usb {
-			label = "blue:usb";
-			gpios = <&tlmm 10 GPIO_ACTIVE_HIGH>;
-			linux,default-trigger = "usbport";
-			trigger-sources = <&usb3_port1>, <&usb3_port2>, <&usb2_port1>;
-		};
-
 		led_sys: can {
 			label = "blue:can";
 			gpios = <&tlmm 11 GPIO_ACTIVE_HIGH>;
